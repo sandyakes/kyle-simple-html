@@ -597,5 +597,41 @@ section.slider-section {
     z-index: 1;
 }
 
+.main-header {
+    background: #990000;
+    border-bottom: 8px solid #740202;
+}
+
+.main-header {
+    background: #990000;
+    border-bottom: 8px solid #740202;
+    padding-top: 10px;
+}
+
+nav.main-navigation ul.main-menu li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+nav.main-navigation ul.main-menu>li+li {
+    margin-left: 60px;
+}
+
+a.order-online-btn {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: inline-table;
+    border: 2px solid #fff;
+    border-radius: 0 0 15px 15px;
+    padding-bottom: 5px;
+}
+
+.right-menu {
+    position: relative;
+}
+
 
 /*====== End =======*/
