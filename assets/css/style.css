@@ -315,6 +315,7 @@ section.slider-section {
     font-weight: bold;
     margin-bottom: 20px;
     font-size: 34px;
+    text-transform: uppercase;
 }
 
 .slider-content h4 {
@@ -540,20 +541,20 @@ section.slider-section {
 }
 
 .footer-bottom ul.menu li {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.footer_half2 {
-    margin-top: 40px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .footer-bottom a.social-links svg {
-    fill: #fff;
+    /* fill: #fff; */
+}
+
+.footer-bottom ul.menu {
+    margin-top: 25px;
 }
 
 .footer-bottom a.social-links {
-    background: #000;
+    background: #ffcc33;
     border-radius: 50%;
     text-align: center;
     width: 35px;
@@ -583,6 +584,8 @@ section.slider-section {
 .copyright {
     text-align: center;
     margin: 40px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    padding-top: 30px;
 }
 
 .product-images-carousel {
@@ -631,6 +634,26 @@ a.order-online-btn {
 
 .right-menu {
     position: relative;
+}
+
+.category-content h3 {
+    padding: 20px 30px;
+    background: #2c3e50;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+    margin: 0;
+}
+
+.category-content h3 a {
+    color: #fff;
+}
+
+.category-content p {
+    padding: 20px 30px;
+    color: #2c3e50;
+    background: #fff;
 }
 
 
