@@ -617,7 +617,7 @@ nav.main-navigation ul.main-menu li a {
 }
 
 nav.main-navigation ul.main-menu>li+li {
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 a.order-online-btn {
