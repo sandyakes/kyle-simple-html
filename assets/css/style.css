@@ -33,7 +33,7 @@ use [ CTR + F ] and type [ SECTION NAME ] or [ .class-name ] You can find it qui
 
 /*===== Google Font =====*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /*===== Variables =====*/
 
@@ -42,13 +42,13 @@ use [ CTR + F ] and type [ SECTION NAME ] or [ .class-name ] You can find it qui
     --body_bg: #ffffff;
     --body_color: #717171;
     --primary_color: #1a1a1a;
-    --secondary_color: #AC9175;
-    --hover_color: #AC9175;
+    --secondary_color: #401a31;
+    --hover_color: #401a31;
     --light_color: #fdf9f0;
     /* Font Family */
-    --title_font: 'Poppins', sans-serif;
-    --body_font: 'Poppins', sans-serif;
-    --cursive_font: 'Poppins', sans-serif;
+    --title_font: 'Noto Serif', serif;
+    --body_font: 'Noto Serif', serif;
+    --cursive_font: 'Noto Serif', serif;
     /* Font Size Typo Variables */
     --fontsize_body: 16px;
     --heading_H1: 36px;
@@ -189,6 +189,7 @@ div#back-top span {
 
 .button.button-secondary:hover {
     background-color: var(--primary_color);
+    color: #fff;
 }
 
 .slick-slider button.slick-arrow {
@@ -290,7 +291,7 @@ nav.main-navigation ul.main-menu>li>a::after {
 /*====== Main =======*/
 
 main {
-    background: url(../images/pattern.jpeg) repeat;
+    background: url(../images/bg.png) repeat;
 }
 
 
@@ -300,11 +301,29 @@ main {
 /*====== Slider =======*/
 
 section.slider-section {
-    background-image: url(../images/banner.jpg);
-    padding: 80px 0;
+    background-image: url(../images/banner.jpeg);
+    padding: 200px 0;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: bottom center;
+    position: relative;
+    z-index: 9;
+}
+
+section.slider-section:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(90deg, #000 -100%, transparent);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.slider-content.container {
+    position: relative;
+    z-index: 9;
 }
 
 .slider-content * {
@@ -326,6 +345,7 @@ section.slider-section {
 .slider-content h5 a {
     font-size: 26px;
     text-decoration: underline;
+    color: #fff;
 }
 
 .slider-content h5 {
@@ -348,7 +368,7 @@ section.slider-section {
 
 .store-content {
     background: #fff;
-    padding: 60px 30px;
+    padding: 60px 50px 45px;
 }
 
 .store-content h3 {
@@ -533,17 +553,13 @@ section.slider-section {
 }
 
 .footer-bottom {
-    background: #401a31;
+    background: #f6f6f6;
     padding: 60px 0 30px;
 }
 
 .footer-title {
     font-size: 20px;
     margin-bottom: 15px;
-}
-
-.footer-bottom * {
-    color: #fff;
 }
 
 .footer-bottom ul.menu li {
@@ -595,7 +611,7 @@ section.slider-section {
 .copyright {
     text-align: center;
     margin: 40px 0 0;
-    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-top: 1px solid rgba(0, 0, 0, .1);
     padding-top: 30px;
 }
 
